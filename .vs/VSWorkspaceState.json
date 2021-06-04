@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\audio_sync",
+    "\\audio_sync\\audio_sync",
+    "\\audio_sync\\main",
+    "\\audio_sync\\Templates"
+  ],
+  "SelectedNode": "\\audio_sync\\main\\views.py",
+  "PreviewInSolutionExplorer": false
+}
