@@ -10,9 +10,8 @@ from django.conf import settings
 urlpatterns = [
     path('', views.index, name='index'),
     path('sync', views.sync, name='sync'),
-    path('about',views.about, name='about'),
+    path('aboutUs',views.about, name='aboutUs'),
     path('result',views.result, name='result'),
-    path('home',views.index, name='home')
     ]
 
 urlpatterns  += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
