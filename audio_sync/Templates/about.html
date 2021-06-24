@@ -1,0 +1,110 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/bootstrap.css' %}"
+/>
+<link rel="stylesheet" href="{% static 'style.css' %}" />
+<html>
+  <body class="page-top">
+    <header class="header">
+      <a class="logo" href="/">Audio Synchronization</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="/" class="link link-theme link-arrow">HOME</a></li>
+        <li><a href="/aboutUs" class="link link-theme link-arrow">ABOUT</a></li>
+        <li><a href="/result" class="link link-theme link-arrow">Result</a></li>
+      </ul>
+    </header>
+
+    <div>
+      <div id="main" class="main">
+        
+
+        <section class="work">
+          <article class="container" id="one">
+            
+          
+            <section class="py-5" >
+              <div class="section-title text-center mb-5">
+                  <h2>What we are doing to make this happen...</h2>
+                  <p style="text-align: center;">Aligning various audio files into a single file.</p>
+                  <p style="text-align: center;">How Audio Synchronization works?</p>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-account-box-outline mdi-48px"></i></div>
+                          <h5 class="mt-3 mb-3">Audio Fingerprint</h5>
+                          <p>Audio fingerprinting is the process of representing an audio signal in a compact way by extracting relevant features of the audio content.
+                            Short summary of audio object using a limited number of bits.</p>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-check-circle-outline mdi-48px"></i></div>
+                          <h5 class="mb-3">Mel Frequency Cepstral Coefficients(MFCC) </h5>
+                          <p>MFCC features represent units of sound as the shape of the vocal tract. 
+                            Simply saying, it represents sound signal into how people hear musical tones.
+                            Mel scale is a scale that scales the frequency in order to match more closely what the human ear can hear.
+                            MFCCs are a feature widely used in automatic speech and speaker recognition.
+                            </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-account-multiple-outline mdi-48px"></i></div>
+                          <h5 class="mt-3 mb-3">Music Onset</h5>
+                          <p>Music onset is the detection of the instant when a discrete event begins in music signal.
+                            It is also described as finding musically meaningful events in audio signals.</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-clock mdi-48px"></i></div>
+                          <h5 class="mb-3">Dynamic Time warping</h5>
+                          <p>DTW is used to calculate the distance matrix between two time series of different length.
+                            The idea to compare arrays with different length is to build one-to-many and many-to-one matches so that the total distance can be minimized between the two.</p>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-sticker-emoji mdi-48px"></i></div>
+                          <h5 class="mt-3 mb-3"></h5>
+                          <p></p>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <div class="mt-4 mb-4"><i class="text-success mdi mdi-comment-alert-outline mdi-48px"></i></div>
+                          <h5 class="mt-3 mb-3">Tapio Honka:</h5>
+                          <p>One shot Learning with Siamese Networks for Environmental Audio.</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      
+          </article>
+        </section>
+        <!-- /work -->
+
+        <footer class="footer">
+          <div class="container">
+            <hr />
+            <article class="foot-content-left">
+              <ul>
+                &copy;2021
+              </ul>
+            </article>
+
+            <!-- <article class="foot-content">
+                <ul>
+                  <li><a href="pixelstrecher@gmail.com">pixelstrecher@gmail.com</a></li>
+                  <li class="social"><a href="https://www.facebook.com/">Facebook</a></li>
+                  <li class="social"><a href="https://twitter.com/">Twitter</a></li>
+                  <li class="social"><a href="https://www.linkedin.com/company/">LinkedIn</a></li>
+                </ul>
+              </article> -->
+          </div>
+        </footer>
+        <!-- /footer -->
+      </div>
+    </div>
+    <!-- end div container -->
+  </body>
+</html>

@@ -1,12 +1,102 @@
 <!DOCTYPE html>
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/bootstrap.css' %}"
+/>
+<link rel="stylesheet" href="{% static 'style.css' %}" />
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio_sync</title>
-</head>
-<body>
-    <h1>andda</h1>
-</body>
+  </head>
+  <body class="page-top">
+    <header class="header">
+      <a class="logo" href="/">Audio Synchronization</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="/" class="link link-theme link-arrow">HOME</a></li>
+        <li><a href="/aboutUs" class="link link-theme link-arrow">ABOUT</a></li>
+        <li><a href="/result" class="link link-theme link-arrow">Result</a></li>
+      </ul>
+    </header>
+
+    <div>
+      <div id="main" class="main">
+        <section class="intro">
+          <!-- <article class="container">
+            <h1>Front-end <strong>Development</strong></h1>
+            <h2>
+              Wanna craft the beautiful, responsive digital experiences you
+              dream of ? We are here for you.
+            </h2>
+            <p>
+              <a
+                href=".footer"
+                class="link link-theme link-arrow"
+                title="Let’s Build Something Great"
+                >LET’S BUILD SOMETHING GREAT</a
+              >
+            </p>
+          </article> -->
+        </section>
+        <!-- /intro -->
+
+        <section class="work">
+          <article class="container" id="one">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                
+                <!-- <video width="500" height="500" controls>
+                  <source src="{{video.video.url}}" type="video/mp4" />
+                  <b>{{video.title}}</b>
+                </video> -->
+                <video width='320' height= '240' controls>
+                  <source src="{% static 'videos/google-guru.mp4' type='video/mp4' %}">
+                  Your browser does not support the video tag.
+                  </video>
+                  
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- /work -->
+
+        <footer class="footer">
+          <div class="container">
+            <hr />
+            <article class="foot-content-left">
+              <ul>
+                &copy;2021
+              </ul>
+            </article>
+
+            <!-- <article class="foot-content">
+                <ul>
+                  <li><a href="pixelstrecher@gmail.com">pixelstrecher@gmail.com</a></li>
+                  <li class="social"><a href="https://www.facebook.com/">Facebook</a></li>
+                  <li class="social"><a href="https://twitter.com/">Twitter</a></li>
+                  <li class="social"><a href="https://www.linkedin.com/company/">LinkedIn</a></li>
+                </ul>
+              </article> -->
+          </div>
+        </footer>
+        <!-- /footer -->
+      </div>
+    </div>
+    <!-- end div container -->
+  </body>
 </html>
