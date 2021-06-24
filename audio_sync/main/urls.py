@@ -12,6 +12,7 @@ urlpatterns = [
     path('sync', views.sync, name='sync'),
     path('about',views.about, name='about'),
     path('result',views.result, name='result'),
+    path('home',views.index, name='home')
     ]
 
 urlpatterns  += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
