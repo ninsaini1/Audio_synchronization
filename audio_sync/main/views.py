@@ -15,10 +15,10 @@ def result(request):
 
 def sync(request):
     if request.method == 'POST':          
-        title = request.POST['title1']
-        video = request.POST['audio1']
+        title1 = request.POST['title1']
+        video1 = request.POST['audio1']
          
-        content = models.Videos(title=title,video=video)
+        content = models.Videos(title=title1,video=video1)
         content.save()
 
         title2 = request.POST['title2']
@@ -26,6 +26,13 @@ def sync(request):
 
         content2 = models.Videos(title=title2, video=video2)
         content2.save()
-        return redirect('index')
+
+        title3 = request.POST['title3']
+        video3 = request.POST['audio3']
+
+        
+        content3 = models.Videos(title=title3, video=video3)
+        content3.save()
+        # return redirect('index')
      
     return render(request, 'result.html')
