@@ -64,10 +64,14 @@
                   <source src="{{video.video.url}}" type="video/mp4" />
                   <b>{{video.title}}</b>
                 </video> -->
-                <video width='320' height= '240' controls>
-                  <source src="{% static 'videos/google-guru.mp4' type='video/mp4' %}">
-                  Your browser does not support the video tag.
+                {%for x in video%}
+                {% ifequal x.title 'result' %}
+                <h3 class="text-center mt-2 mb-2">{{x.title}}</h3>
+                <video class=' embed-responsive embed-responsive-16by9' width='320' height= '240' controls='controls'>
+                  <source src="{{x.video.url}}" type='video/mp4'/>
                   </video>
+                {% endifequal %}
+                {%endfor%}
                   
               </div>
             </div>

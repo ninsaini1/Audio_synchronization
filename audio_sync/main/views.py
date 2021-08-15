@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from . import models
 from django.shortcuts import redirect
 
+#from mashup import *
+
 # Create your views here.
 
 def index(request):
@@ -34,5 +36,11 @@ def sync(request):
         content3 = models.Videos(title=title3, video=video3)
         content3.save()
         # return redirect('index')
+        #t = mash(video1, video2, video3)
+
+        video = models.Videos.objects.all()
+    
+    else:
+        video = models.Videos.objects.all()
      
-    return render(request, 'result.html')
+    return render(request, 'result.html', {"video":video})

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\Audio_synchronization\env"
+VIRTUAL_ENV="C:\Users\neera\Desktop\Django\Audio_synchronization\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
